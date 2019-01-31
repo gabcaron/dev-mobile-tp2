@@ -192,7 +192,7 @@ a{
 header{
     text-align:left;
     height: 100%;
-    padding:50px 100px;
+    padding:50px 5vw;
     padding-bottom: 0px;
 }
 
@@ -273,6 +273,59 @@ nav .search-container button {
 
 nav .search-container button:hover {
     background: #ccc;
+}
+
+#mountain-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.container{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ef4b27;
+}
+
+.container:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#core{
+    margin: 5vw;
+}
+
+#core h1{
+    margin-bottom: 5vh;
+    margin-left: 5vw;
 }
 
 @media screen and (max-width: 600px) {
