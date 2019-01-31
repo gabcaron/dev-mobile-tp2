@@ -215,6 +215,115 @@ section{
     background-color: indianred;
 }  
 
+#erreur p {
+    font-size: 13px;
+    margin-top: -12px;
+}
+
+.button {
+    padding-left: 90px; 
+}
+
+button {
+    margin-left: .5em;
+    color: black;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #F6B27D;
+}
+
+button:hover {
+    background-color: #F5AA6F;
+}
+
+.signup{
+    background-color: white;
+    font-family: arial, sans-serif;
+    width: 500px;
+    padding: 30px;
+    margin: 50px auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.signup h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: arial, sans-serif;
+    color: grey;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 20px -30px;
+}
+.signup input[type="text"],
+.signup input[type="date"],
+.signup input[type="datetime"],
+.signup input[type="email"],
+.signup input[type="number"],
+.signup input[type="search"],
+.signup input[type="time"],
+.signup input[type="url"],
+.signup input[type="password"],
+.signup input[type="tel"],
+.signup textarea,
+.signup select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    background: transparent;
+    margin-bottom: 20px;
+    font: 16px Arial, sans-serif;
+    height: 45px;
+}
+.signup textarea{
+    resize:none;
+    overflow: hidden;
+}
+.signup input[type="button"], 
+.signup input[type="submit"]{
+    /*-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;*/
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    /*border-radius: 20px;*/
+    display: inline-block;
+    /*position: absolute;
+    left: -100px;*/
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: arial sans-serif;
+    font-size: 18px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    margin-left: 5%;/*50%*/
+    margin-top: 20px;
+}
+.signup input[type="button"]:hover, 
+.signup input[type="submit"]:hover {
+    background-color:#34CACA;
+}
+
+
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -230,4 +339,30 @@ and (max-device-width : 480px) {
     img{
         width: 100%;
     }
+    
+    #formulaire{
+        margin: 0%;
+    }
+    
+    .signup{
+        width: 80vw;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .signup input[type="text"],
+    .signup input[type="date"],
+    .signup input[type="datetime"],
+    .signup input[type="email"],
+    .signup input[type="number"],
+    .signup input[type="search"],
+    .signup input[type="time"],
+    .signup input[type="url"],
+    .signup input[type="password"],
+    .signup input[type="tel"],
+    .signup textarea,
+    .signup select {
+        font-size: 2.3vh;
+    }
+    
 }

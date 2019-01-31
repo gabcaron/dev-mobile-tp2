@@ -30,8 +30,42 @@
         <section>
             <img src="images/calais.jpg" alt="Cette belle ville de Calais"/>
         </section>
-        <section>
-                
+        <section id="formulaire">
+            <div class="signup">
+                <form action="/contact" method="post">
+                    <h2>Formulaire</h2>
+                    <p>Pour nous envoyer un message, merci de remplir tous les champs du formulaire :</p>
+                    <div>
+                        <select name="civility" size="1">
+                            <option>Mr</option>
+                            <option>Mme</option>
+                            <option>Mlle</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" id="nom" required="required" placeholder="Nom"/>
+                    </div>
+                    <div>
+                        <input type="text" id="prenom" required="required" placeholder="Prénom"/>
+                    </div>
+                    <div>
+                        <input type="date" id="naissance" required="required"/>    
+                    </div>
+                    <div>
+                        <input type="number" id="age" required="required" min="1" max="100" value="18" placeholder="Age"/>
+                    </div>
+                    <div id="erreur">
+                        <input type="email" id="courriel" placeholder="Email ex : nom.prenom@email.com" required="required"/>
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="Numéro de téléphone (format : 06 01 23 45 67)"/>
+                    </div>
+                    <div>
+                        <input type="url" name="url" id="url" placeholder="https://facebook.com" pattern="https://.*" size="60" required="required"/>
+                    </div>
+                    <input type="button" value="Envoyer" /> 
+                </form>
+            </div>
         </section>
         <footer>
         
