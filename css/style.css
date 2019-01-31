@@ -185,7 +185,6 @@ td,th{
 
 
 
-
 body{
     background-color: darkgrey;
 }
@@ -322,6 +321,19 @@ button:hover {
     background-color:#34CACA;
 }
 
+table{
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+td,tr{
+    border: 1px solid black;
+}
+
+.table-head{
+    background-color: darkgrey;
+}
+
 
 
 @media only screen
@@ -363,6 +375,15 @@ and (max-device-width : 480px) {
     .signup textarea,
     .signup select {
         font-size: 2.3vh;
+    }
+    
+    table{
+        width: 100%;
+        text-align: center;
+    }
+    
+    td{
+        display: block;
     }
     
 }
