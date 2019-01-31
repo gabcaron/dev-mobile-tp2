@@ -186,7 +186,10 @@ td,th{
 
 
 body{
-    background-color: darkgrey;
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
 }
 
 header{
