@@ -339,6 +339,29 @@ nav .search-container button:hover {
 
 #core .top-listing {
     margin-top: 8vh;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+}
+
+#core .top-listing #box {
+    text-align: center;
+}
+
+#core .top-listing .list {
+    display: inline-block;
+    width: 20%;
+    margin: 2vw;
+    text-align: center;
+}
+
+#core .top-listing .list img {
+    width: 100%;
+    transition: 0.2s;
+}
+
+#core .top-listing .list img:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
