@@ -18,17 +18,23 @@
         <header>
             <nav>
                 <h2><a href="#">Make a Trip<span>.</span></a></h2>
+                <div id="menu-burger">
+                    <button type="submit"><i class="fa fa-bars"></i></button>
+                </div>
                 <div id="menu-arianne">
                     <a href="index.html" class="active">Accueil</a>
-                    <a href="#">A propos</a>
-                    <a href="#">Contact</a>
+                    <a href="#map">A propos</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="search-container">
                     <form action="/action_page.php">
                         <input type="text" placeholder="Rechercher" name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                </div>   
+                </div>
+                <div id="phone-call">
+                    <a href="tel:0761436104"><i class="fa fa-phone"></i></a>
+                </div>
             </nav>
         </header>
         <section>
@@ -49,7 +55,7 @@
                         <a href="#">
                             <img src="images/nature.jpg" id="nature-img" alt="Tellement nature" />
                         </a>
-                        <h2>L'Europe et ses forêts</h2>
+                        <h2>L'Europe centrale et ses forêts</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum erat ut convallis semper. Morbi a ex magna. Maecenas id felis ipsum. Sed aliquam magna volutpat dictum convallis. Cras facilisis ipsum id velit volutpat auctor. Nam eu ullamcorper justo, sit. </p>
                     </div>
                     <div class="list">
@@ -70,7 +76,7 @@
                         <a href="#">
                             <img src="images/sunset.jpg" id="sunset-img" alt="Coucher de soleil en Asie" />
                         </a>
-                        <h2>Découvrir l'Asie du Sud</h2>
+                        <h2>Découvrir les îles d'Asie du Sud</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum erat ut convallis semper. Morbi a ex magna. Maecenas id felis ipsum. Sed aliquam magna volutpat dictum convallis. Cras facilisis ipsum id velit volutpat auctor. Nam eu ullamcorper justo, sit. </p>
                     </div>
                 </div>
@@ -81,23 +87,27 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7597406563455!2d101.70968941540569!3d3.1579224039777154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0x9e3afdd17c8a9056!2sPetronas+Twin+Towers!5e0!3m2!1sfr!2sfr!4v1551369076164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div id="contact">
+                    <h1>Nous contacter</h1>
                     <form>
-                        <input type="text" class="input-left" placeholder="Prénom" />
-                        <input type="text" class="input-right" placeholder="Nom" />
-                        <input type="date" class="input-left" placeholder="Date de naissance" />
-                        <input type="text" class="input-right" placeholder="Ville de naissance" />
-                        <input type="email" placeholder="Adresse email" />
-                        <div class="box-dl">
+                        <input type="text" class="input-left elements" placeholder="Prénom" />
+                        <input type="text" class="input-right elements" placeholder="Nom" />
+                        <input type="date" class="input-left elements" placeholder="Date de naissance" />
+                        <input type="text" class="input-right elements" placeholder="Ville de naissance" />
+                        <input type="email" class="elements" placeholder="Adresse email" />
+                        <div class="box-dl elements">
                             <p class="image-dl">Envoyer une photo :</p>
                             <input type="file" value="Envoyer une photo" class="image-dl" />
                         </div>
-                        <textarea id="msg" name="textarea" rows="1" cols="30" placeholder="Laissez votre message ici ..."></textarea> 
+                        <textarea id="msg" class="elements" name="textarea" rows="5" cols="30" placeholder="Laissez votre message ici ..."></textarea>
+                        <input type="submit" id="envoi" value="Envoyer" />
                     </form>
                 </div>
             </div>
         </section>
         <footer>
-        
+            <div class="footer-container">
+                <p>Site créé par Gabin Caron</p>
+            </div>
         </footer>
     </body>
 </html>
