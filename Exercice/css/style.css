@@ -610,7 +610,7 @@ and (max-device-width : 480px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 66%;
+        width: 60%;
         margin-bottom: 2vh;
     }
     
@@ -627,10 +627,19 @@ and (max-device-width : 480px) {
         margin-top: -12vh;
     }
     
+    header nav #menu-burger button{
+        margin-top: 4vh;
+        border: none;
+    }
+    
     header nav #phone-call{
         display: inline-block;
         margin-top: -14vh;
         margin-right: 0;
+    }
+    
+    header nav #phone-call a{
+        margin-top: 4vh;
     }
     
     .text{
